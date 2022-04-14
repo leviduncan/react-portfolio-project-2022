@@ -1,8 +1,7 @@
 function About() {
     return (
         <>
-            <div id="about"></div>
-            <section className="about d-flex">
+            <section id="about" className="about d-flex">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-7">

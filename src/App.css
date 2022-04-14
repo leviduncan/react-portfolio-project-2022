@@ -93,10 +93,6 @@ a:hover {
     text-transform: uppercase;
 }
 
-#about {
-	height: 5rem;
-}
-
 .hero {
 	background: var(--wht);
 	background: url('./assets/Banner01.jpg');
@@ -122,7 +118,7 @@ a:hover {
 	content: "";
 	position: absolute;
 	right: 0;
-	top: 49em;
+	top: 44em;
 	width: 100%;
 	min-height: 44em;
 	z-index: 1;
