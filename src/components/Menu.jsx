@@ -20,9 +20,9 @@ function Menu() {
                         <li className="nav-item">
                             <a className="nav-link" href="#projects">Projects</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link" href="#coding">Code Challenge</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <a href="#connect" className="btn btn-org btn-sm" href="#connect">Connect</a>
                         </li>
