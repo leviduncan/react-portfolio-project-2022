@@ -3,6 +3,8 @@ import alldata from '../data'
 import gmas from '../assets/gmas.jpg'
 import armony from '../assets/armony.jpg'
 import fpantry from '../assets/fpantry.jpg'
+import { BsGithub } from 'react-icons/bs'
+import { BiLinkExternal } from 'react-icons/bi'
 
 function Projects() {
 
@@ -31,8 +33,8 @@ function Projects() {
                                         <p className="card-text">{data.text}</p>
                                     
                                     <div className="d-flex justify-content-between text-center">
-                                        <a href="" className="btn btn-primary btn-sm">Demo</a>
-                                        <a href="" className="btn btn-primary btn-sm">Code</a>
+                                        <a href={data.app_link} target="_blank" className="btn btn-primary btn-sm"><BiLinkExternal /> Demo</a>
+                                        <a href={data.git_link} target="_blank" className="btn btn-primary btn-sm"><BsGithub /> Code</a>
                                     </div>
                                     </div>
                                 </div>

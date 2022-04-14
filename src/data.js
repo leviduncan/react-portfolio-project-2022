@@ -5,24 +5,24 @@ const alldata = {
             title: 'Grandma\'s Kitchen App',
             text: 'Recipe search app driven by Edamam Recipe Search & Diet API',
             pic: 'gmas',
-            git_link: '',
-            app_link: ''
+            git_link: 'https://github.com/leviduncan/grandmas-kitchen',
+            app_link: 'https://grandmas-kitchen-2021.netlify.app/'
         },
         {
             id: 2,
             title: 'Armonia Social Media App',
             text: 'Vanilla JavaScript based weather app driven by Openweather API',
             pic: 'armony',
-            git_link: '',
-            app_link: ''
+            git_link: 'https://github.com/leviduncan/Armonia-Social-Media-App',
+            app_link: 'https://armonia-social-media-app.netlify.app/'
         },
         {
             id: 3,
             title: 'Food Pantry eCommerce App',
             text: 'Vanilla JavaScript based weather app driven by Openweather API',
             pic: 'pantry',
-            git_link: '',
-            app_link: ''
+            git_link: 'https://github.com/leviduncan/Food-Pantry-App',
+            app_link: 'https://food-pantry.netlify.app/'
         },
 ],
     skills: [
