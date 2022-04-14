@@ -9,7 +9,7 @@ function Hero() {
                         <h2 className="my-3">that help businesses solve problems</h2>
                         <div className="d-flex flex-column flex-md-row">
                             <div className="">
-                                <button className="btn btn-primary btn-lg btn-block">Resume</button>
+                                <a href="https://darrin-duncan.com/static/media/darrin_duncan_resume.6684cecb0d01db0401fe.pdf" className="btn btn-primary btn-lg btn-block">Resume</a>
                             </div>
                         </div>
                     </div>

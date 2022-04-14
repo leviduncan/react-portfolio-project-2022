@@ -15,7 +15,7 @@ function About() {
                                 Hi I'm Darrin. As a web developer I add value by designing, developing, enhancing, testing and deploying modern web applications with an end goal of creating engaging and user-friendly experiences. I gather, define or interpret business requirements, and troubleshoot and fix bugs. I have juggled projects with multiple development and creative teams or run solo as a consultant. I am always available to chat with you about your next project, so let's connect. I look forward to speaking with you.
                         </p>
                             <div className="mt-4">
-                                <button className="btn btn-light btn-lg btn-block">Let's Connect</button>
+                                <a href="#connect" className="btn btn-light btn-lg btn-block">Let's Connect</a>
                             </div>
                         </div>
 

@@ -37,18 +37,6 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* <div key={data.id} className="col-sm-6 col-lg-4 p-2">
-                                <div className="card">
-                                <img src={handleImg(data)} className="card-img" alt="..." />
-                                   
-                                    <div className="card-body">
-                                        <h5 className="card-title">{data.title}</h5>
-                                        <p className="card-text">{data.text}</p>
-                                        <a href="#projects" className="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div> */}
                         </>
                     )
                     )}
