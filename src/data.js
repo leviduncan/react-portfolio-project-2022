@@ -11,7 +11,7 @@ const alldata = {
         {
             id: 2,
             title: 'Armonia Social Media App',
-            text: 'Vanilla JavaScript based weather app driven by Openweather API',
+            text: 'To provide a way for single people to find and interact with other single people with the same interests in their community',
             pic: 'armony',
             git_link: 'https://github.com/leviduncan/Armonia-Social-Media-App',
             app_link: 'https://armonia-social-media-app.netlify.app/'
@@ -19,7 +19,7 @@ const alldata = {
         {
             id: 3,
             title: 'Food Pantry eCommerce App',
-            text: 'Vanilla JavaScript based weather app driven by Openweather API',
+            text: 'View and purchase great tasting food plans fro a good price',
             pic: 'pantry',
             git_link: 'https://github.com/leviduncan/Food-Pantry-App',
             app_link: 'https://food-pantry.netlify.app/'
