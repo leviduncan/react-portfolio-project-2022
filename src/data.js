@@ -35,31 +35,31 @@ const alldata = {
         {
             id: 2,
             title: 'React Js',
-            text: 'Vanilla JavaScript based weather app driven by Openweather API',
+            text: 'I use React to create interactive applications for mobile and web.',
             ico: 'React',
         },
         {
             id: 3,
             title: 'APIs',
-            text: 'Vanilla JavaScript based weather app driven by Openweather API',
+            text: 'APIs allow me to build new programmatic interactions between applications and users',
             ico: 'API',
         },
         {
             id: 4,
             title: 'MongoDB',
-            text: 'The building blocks of the web',
+            text: 'I use MongoDB to store data for my applications. It allows for fast retrieval of that data',
             ico: 'DB',
         },
         {
             id: 5,
             title: 'Node JS',
-            text: 'Vanilla JavaScript based weather app driven by Openweather API',
+            text: 'I use NodeJS in the backend for collecting data from multiple source points',
             ico: 'Node',
         },
         {
             id: 6,
             title: 'PHP',
-            text: 'Vanilla JavaScript based weather app driven by Openweather API',
+            text: 'I use PHP because it is easy to deploy on different systems and platforms at minimal additional cost',
             ico: 'PHP',
         },
 ]
