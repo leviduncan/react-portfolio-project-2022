@@ -130,7 +130,7 @@ a:hover {
 
 @media(min-width: 768px) {
 	.about {
-		background-position: -50px bottom;
+		background-position: -170px bottom;
 		background-size: contain;
 	}
 }
@@ -154,6 +154,10 @@ a:hover {
 	position: relative;
 	z-index: 10;
 	color: var(--wht);
+	background:var(--p2-shadow);
+	padding: 1.2em;
+	border-radius: 30px;
+	backdrop-filter: blur(10px);
 }
 
 .about h2, .skills h2, .connect h2 {
