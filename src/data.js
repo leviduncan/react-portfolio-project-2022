@@ -11,7 +11,7 @@ const alldata = {
         {
             id: 2,
             title: 'Armonia Social Media App',
-            text: 'To provide a way for single people to find and interact with other single people with the same interests in their community',
+            text: 'Connect with friends or find new ones in this community of singles',
             pic: 'armony',
             git_link: 'https://github.com/leviduncan/Armonia-Social-Media-App',
             app_link: 'https://armonia-social-media-app.netlify.app/'

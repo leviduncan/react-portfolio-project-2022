@@ -87,10 +87,14 @@ a:hover {
 
 .navbar {
 	backdrop-filter: blur(10px);
-    background: var(--wht);
+    background: rgba(255, 255, 255, 0.768);
     box-shadow: 0 0 50px var(--p2-shadow);
     padding: 1.5em;
     text-transform: uppercase;
+}
+
+.navbar-light .navbar-toggler {
+    border: unset;
 }
 
 .hero {
@@ -106,12 +110,29 @@ a:hover {
 	background-color: var(--blk);
 	background-image: url('./assets/about_photo.png');
 	background-repeat: no-repeat;
-	background-position: -50px bottom;
-	background-size: contain;
+	background-position: -313px bottom;
+	background-size: cover;
 	color: var(--wht);
-	padding-top: 2.5em;
-	min-height: 44em;
+	padding: 9.5em 0;
+	height: 44em;
 	overflow: hidden;
+}
+.about .overlay {
+	background: var(--blk);
+	opacity:60%;
+	top: 44em;
+	width: 100%;
+	min-height: 44em;
+	position: absolute;
+	z-index: 1;
+	top: 44em;
+}
+
+@media(min-width: 768px) {
+	.about {
+		background-position: -50px bottom;
+		background-size: contain;
+	}
 }
 
 .about::after {
@@ -121,17 +142,18 @@ a:hover {
 	top: 44em;
 	width: 100%;
 	min-height: 44em;
-	z-index: 1;
+	z-index: 2;
 	background-image: url('./assets/glow.png');
 	background-repeat: no-repeat;
 	background-position: 30em 21em;
 	background-size: cover;
+	opacity: 80%;
 }
 
 .about .content {
 	position: relative;
-	z-index: 100;
-	color: var(--lt-gry);
+	z-index: 10;
+	color: var(--wht);
 }
 
 .about h2, .skills h2, .connect h2 {
@@ -168,8 +190,8 @@ a:hover {
 	box-shadow: 0 0 10px var(--p2-shadow);
 	border: solid 2px var(--org);
 	color: var(--org);
-	transform: scale(1.1);
-	transform-origin: center
+  transform: scale(1.1);
+  transform-origin: center
 }
 
 .skills h4 {
