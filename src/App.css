@@ -161,12 +161,15 @@ a:hover {
 	padding: 1em;
 	border-radius: var(--bdr-radius);
 	border: solid 2px var(--wht);
+	transition: transform 250ms ease-out;
 }
 
 .skill-card:hover {
 	box-shadow: 0 0 10px var(--p2-shadow);
 	border: solid 2px var(--org);
 	color: var(--org);
+	transform: scale(1.1);
+	transform-origin: center
 }
 
 .skills h4 {
@@ -197,12 +200,14 @@ a:hover {
 .card {
 	border-radius: var(--bdr-radius);
 	background-color: var(--lht-blu);
+	transition: transform 250ms ease-out;
 
 }
 
 .card:hover {
 	box-shadow: 0 0 20px var(--p2-shadow);
-	margin-top: -10px;
+	transform: scale(1.1);
+	transform-origin: center
 }
 
 .projects {
