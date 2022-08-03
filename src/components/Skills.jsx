@@ -34,7 +34,7 @@ function Skills() {
           <h2>My Skills</h2>
           <p>As a problem solver I build fullstack web applications using technology like HTML, CSS, JavaScript, React JS and MongoDB. I have highlighted some of the key technical skills that I will bring to your project.</p>
         </div>
-        <div className="col-lg-12 d-lg-flex flex-lg-wrap justify-content-lg-space">
+        <div className="col-lg-12 d-lg-flex flex-lg-wrap justify-content-center">
           {alldata.skills.map(data => {
             return (
               <>
