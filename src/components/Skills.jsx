@@ -10,7 +10,6 @@ function Skills() {
   const handleIcons = (data) => {
     const skill = data.ico
 
-    console.log(data.title);
     if (skill === 'HTML') {
       return <SiWebpack />
     } else if (skill === 'React') {
@@ -29,19 +28,17 @@ function Skills() {
   }
   return (
     <section id="skills" className="skills">
-      <div className="container">
-        <div className="col-12 col-lg-10">
+      <div className="container-fluid">
+        <div className="col-12">
           <h2>My Skills</h2>
-          <p>As a problem solver I build fullstack web applications using technology like HTML, CSS, JavaScript, React JS and MongoDB. I have highlighted some of the key technical skills that I will bring to your project.</p>
+          <p className="para">As a problem solver I build fullstack web applications using technology like HTML, CSS, JavaScript, React JS and MongoDB. I have highlighted some of the key technical skills that I will bring to your project.</p>
         </div>
-        <div className="col-lg-12 d-lg-flex flex-lg-wrap justify-content-center">
+        <div className="col-lg-12 d-lg-flex flex-sm-wrap justify-content-center">
           {alldata.skills.map(data => {
             return (
               <>
-                <div key={data.id} className="col-12 col-lg-3 text-center skill-card">
-                  {handleIcons(data)}
-                  <h4>{data.title}</h4>
-                  <p>{data.text}</p>
+                <div key={data.id} className="text-center skill-card">
+                  <h4 key={data.title}>{data.title}</h4>
                 </div>
               </>
             )

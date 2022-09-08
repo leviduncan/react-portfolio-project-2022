@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-        <main className="">
+      <main className="">
         <Menu />
         <Hero />
         <Projects />

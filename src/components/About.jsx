@@ -1,9 +1,14 @@
+import me from '../assets/about_full.png'
+
 function About() {
     return (
         <>
             <section id="about" className="about d-flex">
-                <div className="container">
-                    <div className="row d-flex justify-content-end">
+                <div className="container-fluid">
+                    <div className="row d-flex">
+                        <div className="about-img">
+                            <img src={ me } alt="" />
+                        </div>
 
                         <div className="content">
                             <h2>About Me</h2>

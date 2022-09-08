@@ -4,8 +4,8 @@ function Menu() {
     return (
         
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-            <div className="container">
-                <a className="navbar-brand" href="#">Darrin Duncan</a>
+            <div className="container-fluid">
+                <a className="navbar-brand" href="/">Darrin Duncan</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     {/* <span className="navbar-toggler-icon"></span> */}
                     <FaHamburger />
@@ -27,7 +27,7 @@ function Menu() {
                             <a className="nav-link" href="#coding">Code Challenge</a>
                         </li> */}
                         <li className="nav-item">
-                            <a href="#connect" className="btn btn-org btn-sm" href="#connect">Connect</a>
+                            <a href="#connect" className="btn btn-org btn-sm">Connect</a>
                         </li>
                     </ul> 
                 </div>

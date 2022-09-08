@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;600;700&display=swap');
+
+$purpl: #7a8daa;
+$dk-purpl: #4e5a6b;
+$wht: #fff;
+$blu: #acc4e8;
+$lht-blu: #97d9e1;
+$blk: #101010;
+$gry: #666;
+$lt-gry: rgb(243, 243, 243);
+$org: #f05f40;
+$dk-org: #b54d35;
+$dd-pnk: #d9afd9;
+
+$p2-shadow: rgba(0, 0, 0, 0.3);
+
+$bdr-radius: 10px;
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition-duration: 100ms;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: $gry;
+    font-size: 18px;
+    line-height: 2.2;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      color: $blk;
+    }
+
+    h1 {
+      font-weight: 700;
+      line-height: 1;
+      font-size: clamp(3.4rem, 4vw, 5rem);
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.2;
+      padding-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    .about,
+    .projects,
+    .coding,
+    .skills,
+    .connect {
+      padding: 3.125rem 1.25rem;
+    }
+
+    .para {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    nav {
+      a {
+        font-family: 'Oswald', sans-serif;
+        color: $org;
+        &:hover {
+          color: $org;
+        }
+      }
+    }
+    .navbar {
+      backdrop-filter: blur(10px);
+      background: rgb(255, 255, 255);
+      box-shadow: 0 0 50px $p2-shadow;
+      padding: 1.5em;
+      text-transform: uppercase;
+    }
+
+    .navbar-light .navbar-toggler {
+      border: unset;
+    }
+
+    .hero {
+      background-color: $dd-pnk;
+      background-image: linear-gradient(
+        159deg,
+        $dd-pnk 0%,
+        #97d9e1 50%,
+        #ffffff 100%
+      );
+      min-height: 100vh;
+      position: static;
+      overflow: hidden;
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+        line-height: 0.8;
+        max-width: 75%;
+
+        @media (min-width: 768px) {
+          font-size: 5em;
+        }
+      }
+
+      h3 {
+        font-size: 2rem;
+        max-width: 80vw;
+        text-transform: unset;
+
+        @media (min-width: 768px) {
+          font-size: 2.5em;
+        }
+      }
+
+      .left-content {
+        position: relative;
+        z-index: 10;
+        background: $org;
+        padding: 6em 1.5em 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .right-content {
+        position: relative;
+        z-index: 10;
+        background: $blk;
+        color: $wht;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        padding: unset;
+        align-items: flex-end;
+
+        h2 {
+          color: $wht;
+          padding: 20px;
+          font-size: 1.5em;
+          max-width: 80%;
+          line-height: 1;
+          text-transform: unset;
+          font-weight: unset;
+
+          @media (min-width: 768px) {
+            font-size: 2.5em;
+          }
+        }
+
+        &:after {
+          content: '';
+          background-image: url(./assets/about_photo_org.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -300px 70px;
+          opacity: 0.5;
+          width: 500px;
+          width: 100%;
+          height: 100vh;
+          position: absolute;
+        }
+      }
+
+      .content-left {
+        position: relative;
+        z-index: 10;
+        padding: 1.2em;
+        max-width: 600px;
+        width: 100%;
+        background: $wht;
+      }
+      .content-right {
+        position: relative;
+        z-index: 10;
+        padding: 1.2em;
+        max-width: 600px;
+        width: 100%;
+        background: $gry;
+      }
+
+      &:after {
+        width: 100%;
+        position: absolute;
+        content: '';
+        background-image: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          #ffffff 100%
+        );
+        min-height: 100vh;
+        left: 0;
+        z-index: 2;
+      }
+    }
+
+    /* About */
+
+    .about {
+      background-color: $wht;
+      min-height: 44em;
+      overflow: hidden;
+
+      .about-img {
+        display: flex;
+        position: relative;
+        background: $org;
+        width: 40%;
+        height: 500px;
+        margin-top: 100px;
+        padding: 0px;
+
+        @media(max-width: 1070px ) {
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+            margin-top: unset;
+        }
+
+        img {
+            position: relative;
+            left: 140px;
+            top: -40px;
+            margin: 0;
+            border: solid $wht 16px;
+
+            @media(max-width: 1070px ) {
+                border: solid $wht 8px;
+                position: unset;
+                left: 0;
+                top: 0;
+                margin: 0 auto;
+            }
+        }
+      }
+
+      .content {
+        position: relative;
+        z-index: 10;
+        padding: 1.2em 3em;
+        max-width: 600px;
+        width: 100%;
+        float: right;      
+        
+        @media (max-width: 1070px) {
+            padding: 1.2em;
+      }
+      }
+
+
+    }
+
+    /* Skills */
+
+    .skills {
+      background: $lt-gry;
+      color: $blk;
+      padding: 5rem 0.5em;
+      min-height: 100vh;
+
+      svg {
+        color: $blk;
+        border: solid 1px $blk;
+        border-radius: 50%;
+        padding: 4px;
+        margin-bottom: 6px;
+        font-size: 2em;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      h4 {
+        font-size: 1em;
+        text-transform: unset;
+      }
+
+      .skill-card {
+        background-color: $wht;
+        color: $blk;
+        margin: 0 0.8em 0.8em 0;
+        padding: 1em;
+        border-radius: $bdr-radius;
+        border: solid 1px $lt-gry;
+        transition: transform 250ms ease-out;
+        max-width: 300px;
+        width: 100%;
+
+        @media (max-width: 991px) {
+          margin: 0.8em auto;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
+
+        &:hover {
+          box-shadow: 0 0 10px $p2-shadow;
+          border: solid 1px $lt-gry;
+          transform-origin: center;
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    .coding-card {
+      background-color: $wht;
+      color: $blk;
+      margin: 0 0.8em 0.8em 0;
+      padding: 1em;
+      border-radius: $bdr-radius;
+      border: solid 2px $wht;
+
+      &:hover {
+        box-shadow: 0 0 10px $p2-shadow;
+        border: solid 2px $org;
+      }
+    }
+
+    .card {
+      border-radius: $bdr-radius;
+      background-color: $wht;
+      transition: transform 250ms ease-out;
+
+      &:hover {
+        box-shadow: 0 0 20px $p2-shadow;
+        transform: translateY(-5px);
+        transform-origin: center;
+      }
+    }
+
+    // Projects
+    .projects {
+      padding: 5rem 1.5em;
+      min-height: 100vh;
+
+      h2 {
+        text-align: center;
+      }
+
+      .card-img {
+        border-top-right-radius: $bdr-radius;
+        border-top-left-radius: $bdr-radius;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    // Connect
+    .connect {
+      padding: 5rem 1.5em;
+      background: $blk;
+      color: $wht;
+      min-height: 50vh;
+      position: absolute;
+      width: 100%;
+
+      h2 {
+        color: $org;
+      }
+    }
+
+    .btn {
+      border-radius: 50px;
+      padding: 0.5rem 2rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+    }
+
+    .btn-primary {
+      color: $wht;
+      background-color: $blk;
+      border-color: $blk;
+
+      &:hover {
+        color: $blk;
+        background-color: transparent;
+        border-color: $blk;
+      }
+    }
+
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .show > .btn-primary.dropdown-toggle {
+      color: $wht;
+      background-color: $blk;
+      border-color: $blk;
+    }
+
+    .btn-primary.focus,
+    .btn-primary:focus {
+      color: $wht;
+      background-color: $blk;
+      border-color: $blk;
+      box-shadow: 0 0 0 0.2rem $p2-shadow;
+    }
+
+    .btn-purpl {
+      color: $wht;
+      background-color: $purpl;
+      border-color: $purpl;
+
+      &:hover {
+        color: $wht;
+        background-color: $dk-purpl;
+        border-color: $dk-purpl;
+      }
+    }
+
+    .btn-org {
+      color: $wht;
+      background-color: $org;
+      border-color: $org;
+
+      &:hover {
+        color: $wht;
+        background-color: $dk-org;
+        border-color: $dk-org;
+      }
+    }
+  }
+}
