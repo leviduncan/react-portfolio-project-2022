@@ -1,9 +1,5 @@
 import React from 'react'
 import alldata from '../data'
-import { GiReactor } from 'react-icons/gi'
-import { AiFillApi } from 'react-icons/ai'
-import { FaReact, FaNodeJs } from 'react-icons/fa'
-import { SiMongodb, SiPhp, SiWebpack } from 'react-icons/si'
 
 function Skills() {
 

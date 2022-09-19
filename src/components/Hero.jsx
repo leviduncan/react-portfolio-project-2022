@@ -1,4 +1,3 @@
-import mug from '../assets/about_photo.png'
 import rez from '../assets/DARRIN-DUNCAN-FED-REZ.pdf'
 
 function Hero() {
