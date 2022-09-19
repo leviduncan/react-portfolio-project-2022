@@ -4,8 +4,8 @@ import rez from '../assets/DARRIN-DUNCAN-FED-REZ.pdf'
 function Hero() {
     return (
         <header id="top" className="hero d-flex align-items-center flex-lg-row flex-column">
-            <div class="col-lg-7 col-sm-12 left-content">
-                <div class="container-fluid">
+            <div class="col-lg-7 col-sm-12 left-content d-flex align-items-center">
+                <div class="container">
                     <h3>My Name is Darrin,</h3>
                     <h1>I am a Front-End Web Developer</h1>
                     <div className="d-flex flex-column flex-md-row">

@@ -4,7 +4,7 @@ function About() {
     return (
         <>
             <section id="about" className="about d-flex">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row d-flex">
                         <div className="about-img">
                             <img src={ me } alt="" />

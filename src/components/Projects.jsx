@@ -20,7 +20,7 @@ function Projects() {
 
     return (
         <section id="projects" className="projects d-flex align-items-center brdr-bottom brdr-bottom">
-            <div className="container-fluid">
+            <div className="container">
                 <h2>Personal Projects</h2>
                 <div className="row row-cols-1 row-cols-lg-3">
                     {alldata.projects.map((data) => (

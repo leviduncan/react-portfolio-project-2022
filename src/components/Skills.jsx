@@ -7,28 +7,9 @@ import { SiMongodb, SiPhp, SiWebpack } from 'react-icons/si'
 
 function Skills() {
 
-  const handleIcons = (data) => {
-    const skill = data.ico
-
-    if (skill === 'HTML') {
-      return <SiWebpack />
-    } else if (skill === 'React') {
-      return <FaReact />
-    } else if (skill === 'API') {
-      return <AiFillApi />
-    } else if (skill === 'DB') {
-      return <SiMongodb />
-    } else if (skill === 'Node') {
-      return <FaNodeJs />
-    } else if (skill === 'PHP') {
-      return <SiPhp />
-    } else {
-      return <GiReactor />
-    }
-  }
   return (
     <section id="skills" className="skills">
-      <div className="container-fluid">
+      <div className="container">
         <div className="col-12">
           <h2>My Skills</h2>
           <p className="para">As a problem solver I build fullstack web applications using technology like HTML, CSS, JavaScript, React JS and MongoDB. I have highlighted some of the key technical skills that I will bring to your project.</p>

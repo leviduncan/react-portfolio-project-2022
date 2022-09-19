@@ -90,6 +90,11 @@ html body .hero h1 {
 }
 @media (min-width: 768px) {
   html body .hero h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1200px) {
+  html body .hero h1 {
     font-size: 5em;
   }
 }
@@ -113,6 +118,11 @@ html body .hero .left-content {
   align-items: center;
   min-height: 100vh;
 }
+@media (min-width: 768px) {
+  html body .hero .left-content {
+    padding: 6em 1.5em 0 4em;
+  }
+}
 html body .hero .right-content {
   position: relative;
   z-index: 10;
@@ -124,12 +134,18 @@ html body .hero .right-content {
   min-height: 100vh;
   padding: unset;
   align-items: flex-end;
+  justify-content: flex-end;
+}
+@media (min-width: 992px) {
+  html body .hero .right-content {
+    justify-content: flex-start;
+  }
 }
 html body .hero .right-content h2 {
   color: #fff;
   padding: 20px;
   font-size: 1.5em;
-  max-width: 80%;
+  max-width: 30%;
   line-height: 1;
   text-transform: unset;
   font-weight: unset;
@@ -189,6 +205,7 @@ html body .about .about-img {
   height: 500px;
   margin-top: 100px;
   padding: 0px;
+  border-radius: 20px;
 }
 @media (max-width: 1070px) {
   html body .about .about-img {
@@ -204,6 +221,7 @@ html body .about .about-img img {
   top: -40px;
   margin: 0;
   border: solid #fff 16px;
+  border-radius: 40px;
 }
 @media (max-width: 1070px) {
   html body .about .about-img img {
@@ -228,7 +246,7 @@ html body .about .content {
   }
 }
 html body .skills {
-  background: rgb(243, 243, 243);
+  background: #acc4e8;
   color: #101010;
   padding: 5rem 0.5em;
   min-height: 100vh;
@@ -302,7 +320,7 @@ html body .projects {
 html body .projects h2 {
   text-align: center;
 }
-html body .projects .card-img {
+html body .projects .card .card-img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 0;
