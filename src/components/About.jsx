@@ -5,7 +5,7 @@ function About() {
         <>
             <section id="about" className="about d-flex">
                 <div className="container">
-                    <div className="row d-flex">
+                    <div className="row d-flex align-items-center justify-content-center">
                         <div className="about-img">
                             <img src={ me } alt="" />
                         </div>

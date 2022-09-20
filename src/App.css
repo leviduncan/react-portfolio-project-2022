@@ -206,13 +206,20 @@ html body .about .about-img {
   margin-top: 100px;
   padding: 0px;
   border-radius: 20px;
+  left: -50px;
 }
 @media (max-width: 1070px) {
   html body .about .about-img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     padding: 20px;
     margin-top: unset;
+    left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  html body .about .about-img {
+    left: 0;
   }
 }
 html body .about .about-img img {
@@ -279,7 +286,9 @@ html body .skills .skill-card {
 }
 @media (max-width: 991px) {
   html body .skills .skill-card {
-    margin: 0.8em auto;
+    padding: 0.6em;
+    max-width: 120px;
+    width: unset;
   }
 }
 html body .skills .skill-card p {
@@ -342,6 +351,12 @@ html body .btn {
   padding: 0.5rem 2rem;
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
+}
+@media (max-width: 374px) {
+  html body .btn {
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+  }
 }
 html body .btn-primary {
   color: #fff;
