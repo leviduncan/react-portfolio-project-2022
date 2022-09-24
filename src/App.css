@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100;300;400;500;600&display=swap");
 *,
 :after,
 :before {
@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 html body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #666;
   font-size: 18px;
   line-height: 2.2;
@@ -24,23 +24,22 @@ html body h2,
 html body h3,
 html body h4,
 html body h5 {
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  color: #101010;
+  font-family: "Poppins", sans-serif;
+  color: #232323;
 }
 html body h1 {
-  font-weight: 700;
-  line-height: 1;
-  font-size: clamp(3.4rem, 4vw, 5rem);
-}
-html body h2 {
-  font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+}
+html body h2 {
+  font-size: clamp(3.4rem, 4vw, 2.5em);
+  font-weight: 300;
+  line-height: 1;
   padding-bottom: 40px;
 }
 html body h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1.4rem, 2.4vw, 3.4rem);
   font-weight: 400;
 }
 html body #about,
@@ -59,113 +58,102 @@ html body .para {
 }
 html body nav a {
   font-family: "Oswald", sans-serif;
-  color: #f05f40;
+  color: #2a77eb;
 }
 html body nav a:hover {
-  color: #f05f40;
+  color: #2a77eb;
 }
 html body .navbar {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background: rgb(255, 255, 255);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 50px rgba(42, 119, 235, 0.2823529412);
   padding: 1.5em;
   text-transform: uppercase;
+}
+html body .navbar-brand .logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  padding: 5px;
+  background: #232323;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(42, 119, 235, 0.2823529412);
 }
 html body .navbar-light .navbar-toggler {
   border: unset;
 }
 html body .hero {
-  background-color: #d9afd9;
-  background-image: linear-gradient(159deg, #d9afd9 0%, #97d9e1 50%, #ffffff 100%);
   min-height: 100vh;
   position: static;
   overflow: hidden;
 }
-html body .hero h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem;
-  line-height: 0.8;
-  max-width: 75%;
-}
-@media (min-width: 768px) {
-  html body .hero h1 {
-    font-size: 4em;
-  }
-}
-@media (min-width: 1200px) {
-  html body .hero h1 {
-    font-size: 5em;
-  }
-}
-html body .hero h3 {
-  font-size: 2rem;
-  max-width: 80vw;
-  text-transform: unset;
-}
-@media (min-width: 768px) {
-  html body .hero h3 {
-    font-size: 2.5em;
-  }
-}
 html body .hero .left-content {
-  position: relative;
-  z-index: 10;
-  background: #f05f40;
   padding: 6em 1.5em 0;
   height: 100vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 @media (min-width: 768px) {
   html body .hero .left-content {
-    padding: 6em 1.5em 0 4em;
+    padding: 0;
   }
 }
 html body .hero .right-content {
   position: relative;
   z-index: 10;
-  background: #101010;
+  background: #acc4e8;
   color: #fff;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
   padding: unset;
   align-items: flex-end;
   justify-content: flex-end;
+  border-radius: 10px;
+  margin: 30px 0px 30px;
 }
 @media (min-width: 992px) {
   html body .hero .right-content {
     justify-content: flex-start;
   }
 }
+@media (min-width: 576px) {
+  html body .hero .right-content {
+    margin: 100px 0px 30px;
+  }
+}
 html body .hero .right-content h2 {
   color: #fff;
-  padding: 20px;
-  font-size: 1.5em;
-  max-width: 30%;
-  line-height: 1;
-  text-transform: unset;
+  position: relative;
+  top: 30px;
+  background: #232323;
+  padding: 20px 20px;
+  font-size: 1.2em;
   font-weight: unset;
-}
-@media (min-width: 768px) {
-  html body .hero .right-content h2 {
-    font-size: 2.5em;
-  }
+  width: 70%;
+  border-top-right-radius: 10px;
 }
 html body .hero .right-content:after {
   content: "";
-  background-image: url(./assets/about_photo_org.png);
+  background-image: url(./assets/about_photo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -300px 70px;
-  opacity: 0.5;
-  width: 500px;
+  background-position: 31%;
+  opacity: 1;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   position: absolute;
+}
+html body .hero .sub {
+  position: relative;
+  z-index: 100;
 }
 html body .hero .content-left {
   position: relative;
@@ -183,15 +171,6 @@ html body .hero .content-right {
   width: 100%;
   background: #666;
 }
-html body .hero:after {
-  width: 100%;
-  position: absolute;
-  content: "";
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #ffffff 100%);
-  min-height: 100vh;
-  left: 0;
-  z-index: 2;
-}
 html body .about {
   background-color: #fff;
   min-height: 44em;
@@ -200,7 +179,7 @@ html body .about {
 html body .about .about-img {
   display: flex;
   position: relative;
-  background: #f05f40;
+  background: #2a77eb;
   width: 40%;
   height: 500px;
   margin-top: 100px;
@@ -254,13 +233,13 @@ html body .about .content {
 }
 html body .skills {
   background: #acc4e8;
-  color: #101010;
+  color: #232323;
   padding: 5rem 0.5em;
   min-height: 100vh;
 }
 html body .skills svg {
-  color: #101010;
-  border: solid 1px #101010;
+  color: #232323;
+  border: solid 1px #232323;
   border-radius: 50%;
   padding: 4px;
   margin-bottom: 6px;
@@ -275,7 +254,7 @@ html body .skills h4 {
 }
 html body .skills .skill-card {
   background-color: #fff;
-  color: #101010;
+  color: #232323;
   margin: 0 0.8em 0.8em 0;
   padding: 1em;
   border-radius: 10px;
@@ -295,22 +274,22 @@ html body .skills .skill-card p {
   font-size: 0.8em;
 }
 html body .skills .skill-card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(42, 119, 235, 0.2823529412);
   border: solid 1px rgb(243, 243, 243);
   transform-origin: center;
   transform: translateY(-5px);
 }
 html body .coding-card {
   background-color: #fff;
-  color: #101010;
+  color: #232323;
   margin: 0 0.8em 0.8em 0;
   padding: 1em;
   border-radius: 10px;
   border: solid 2px #fff;
 }
 html body .coding-card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border: solid 2px #f05f40;
+  box-shadow: 0 0 10px rgba(42, 119, 235, 0.2823529412);
+  border: solid 2px #2a77eb;
 }
 html body .card {
   border-radius: 10px;
@@ -318,7 +297,7 @@ html body .card {
   transition: transform 250ms ease-out;
 }
 html body .card:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(42, 119, 235, 0.2823529412);
   transform: translateY(-5px);
   transform-origin: center;
 }
@@ -337,20 +316,20 @@ html body .projects .card .card-img {
 }
 html body .connect {
   padding: 5rem 1.5em;
-  background: #101010;
+  background: #232323;
   color: #fff;
   min-height: 50vh;
   position: absolute;
   width: 100%;
 }
 html body .connect h2 {
-  color: #f05f40;
+  color: #2a77eb;
 }
 html body .btn {
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 0.5rem 2rem;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
 }
 @media (max-width: 374px) {
   html body .btn {
@@ -360,27 +339,27 @@ html body .btn {
 }
 html body .btn-primary {
   color: #fff;
-  background-color: #101010;
-  border-color: #101010;
+  background-color: #232323;
+  border-color: #232323;
 }
 html body .btn-primary:hover {
-  color: #101010;
+  color: #232323;
   background-color: transparent;
-  border-color: #101010;
+  border-color: #232323;
 }
 html body .btn-primary:not(:disabled):not(.disabled).active,
 html body .btn-primary:not(:disabled):not(.disabled):active,
 html body .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #101010;
-  border-color: #101010;
+  background-color: #232323;
+  border-color: #232323;
 }
 html body .btn-primary.focus,
 html body .btn-primary:focus {
   color: #fff;
-  background-color: #101010;
-  border-color: #101010;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.3);
+  background-color: #232323;
+  border-color: #232323;
+  box-shadow: 0 0 0 0.2rem rgba(42, 119, 235, 0.2823529412);
 }
 html body .btn-purpl {
   color: #fff;
@@ -394,11 +373,11 @@ html body .btn-purpl:hover {
 }
 html body .btn-org {
   color: #fff;
-  background-color: #f05f40;
-  border-color: #f05f40;
+  background-color: #2a77eb;
+  border-color: #2a77eb;
 }
 html body .btn-org:hover {
   color: #fff;
-  background-color: #b54d35;
-  border-color: #b54d35;
+  background-color: #2059ae;
+  border-color: #2059ae;
 }/*# sourceMappingURL=App.css.map */
