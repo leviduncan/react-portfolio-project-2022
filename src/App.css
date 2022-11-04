@@ -14,8 +14,7 @@ html {
 html body {
   font-family: "Poppins", sans-serif;
   color: #666;
-  font-size: 18px;
-  line-height: 2.2;
+  line-height: 1.5;
   /* About */
   /* Skills */
 }
@@ -66,7 +65,7 @@ html body nav a:hover {
 html body .navbar {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.737);
   box-shadow: 0 0 50px rgba(42, 119, 235, 0.2823529412);
   padding: 1.5em;
   text-transform: uppercase;
@@ -89,23 +88,42 @@ html body .navbar-light .navbar-toggler {
   border: unset;
 }
 html body .hero {
-  min-height: 100vh;
+  height: 100vh;
   position: static;
   overflow: hidden;
-}
-html body .hero .left-content {
-  padding: 6em 1.5em 0;
-  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  background: url("./assets/Banner01.jpg");
+}
+html body .hero .content {
+  display: flex;
+  padding: 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  html body .hero .left-content {
+  html body .hero .content {
     padding: 0;
+    width: 70%;
   }
 }
-html body .hero .right-content {
+html body .hero .btn-grp {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+html body .hero .btn-grp .btn {
+  margin-right: 10px;
+}
+html body .hero .btn-grp .btn:hover {
+  box-shadow: 0 0 10px rgba(42, 119, 235, 0.2823529412);
+}
+html body .about {
+  background-color: #fff;
+  min-height: 44em;
+  overflow: hidden;
+}
+html body .about .right-content {
   position: relative;
   z-index: 10;
   background: #acc4e8;
@@ -120,16 +138,16 @@ html body .hero .right-content {
   margin: 30px 0px 30px;
 }
 @media (min-width: 992px) {
-  html body .hero .right-content {
+  html body .about .right-content {
     justify-content: flex-start;
   }
 }
 @media (min-width: 576px) {
-  html body .hero .right-content {
+  html body .about .right-content {
     margin: 100px 0px 30px;
   }
 }
-html body .hero .right-content h2 {
+html body .about .right-content h2 {
   color: #fff;
   position: relative;
   top: 30px;
@@ -140,7 +158,7 @@ html body .hero .right-content h2 {
   width: 70%;
   border-top-right-radius: 10px;
 }
-html body .hero .right-content:after {
+html body .about .right-content:after {
   content: "";
   background-image: url(./assets/about_photo.png);
   background-repeat: no-repeat;
@@ -151,11 +169,11 @@ html body .hero .right-content:after {
   height: 60vh;
   position: absolute;
 }
-html body .hero .sub {
+html body .about .sub {
   position: relative;
   z-index: 100;
 }
-html body .hero .content-left {
+html body .about .content-left {
   position: relative;
   z-index: 10;
   padding: 1.2em;
@@ -163,18 +181,13 @@ html body .hero .content-left {
   width: 100%;
   background: #fff;
 }
-html body .hero .content-right {
+html body .about .content-right {
   position: relative;
   z-index: 10;
   padding: 1.2em;
   max-width: 600px;
   width: 100%;
   background: #666;
-}
-html body .about {
-  background-color: #fff;
-  min-height: 44em;
-  overflow: hidden;
 }
 html body .about .about-img {
   display: flex;
@@ -326,7 +339,7 @@ html body .connect h2 {
   color: #2a77eb;
 }
 html body .btn {
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 0.5rem 2rem;
   font-family: "Poppins", sans-serif;
   font-size: 1em;

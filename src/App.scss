@@ -35,8 +35,7 @@ html {
   body {
     font-family: 'Poppins', sans-serif;
     color: $gry;
-    font-size: 18px;
-    line-height: 2.2;
+    line-height: 1.5;
 
     h1,
     h2,
@@ -92,7 +91,7 @@ html {
     }
     .navbar {
       backdrop-filter: blur(10px);
-      background: rgb(255, 255, 255);
+      background: rgba(255, 255, 255, 0.737);
       box-shadow: 0 0 50px $p2-shadow;
       padding: 1.5em;
       text-transform: uppercase;
@@ -118,23 +117,49 @@ html {
     }
 
     .hero {
-      min-height: 100vh;
+      height: 100vh;
       position: static;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;   
+      background: url('./assets/Banner01.jpg');
 
-      .left-content {
-        padding: 6em 1.5em 0;
-        height: 100vh;
+      .content {
         display: flex;
-        align-items: center;
-        min-height: 50vh;
+        padding: 0;   
+        width: 100%; 
 
         @media (min-width: 768px) {
-          padding: 0;
+          padding: 0;   
+          width: 70%;
         }
       }
 
-      .right-content {
+      .btn-grp {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+
+        .btn {
+          margin-right: 10px;
+
+          &:hover {
+            box-shadow: 0 0 10px $p2-shadow;
+          }
+        }
+      }
+    }
+ 
+
+    /* About */
+
+    .about {
+      background-color: $wht;
+      min-height: 44em;
+      overflow: hidden;
+      
+     .right-content {
         position: relative;
         z-index: 10;
         background: $blu;
@@ -202,28 +227,6 @@ html {
         width: 100%;
         background: $gry;
       }
-
-      // &:after {
-      //   width: 100%;
-      //   position: absolute;
-      //   content: '';
-      //   background-image: linear-gradient(
-      //     180deg,
-      //     rgba(255, 255, 255, 0.2) 0%,
-      //     #ffffff 100%
-      //   );
-      //   min-height: 100vh;
-      //   left: 0;
-      //   z-index: 2;
-      // }
-    }
-
-    /* About */
-
-    .about {
-      background-color: $wht;
-      min-height: 44em;
-      overflow: hidden;
 
       .about-img {
         display: flex;
@@ -396,7 +399,7 @@ html {
     }
 
     .btn {
-      border-radius: 10px;
+      border-radius: 50px;
       padding: 0.5rem 2rem;
       font-family: 'Poppins', sans-serif;
       font-size: 1em;

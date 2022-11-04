@@ -19,7 +19,7 @@ const alldata = {
         {
             id: 3,
             title: 'Food Pantry eCommerce App',
-            text: 'View and purchase great tasting food plans fro a good price',
+            text: 'View and purchase good tasting food plans for a great price',
             pic: 'pantry',
             git_link: 'https://github.com/leviduncan/Food-Pantry-App',
             app_link: 'https://food-pantry.netlify.app/'

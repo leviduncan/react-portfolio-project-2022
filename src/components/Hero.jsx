@@ -1,23 +1,20 @@
 import rez from '../assets/DARRIN-DUNCAN-FED-REZ.pdf'
+import ButtonLink from './ButtonLink'
 
 function Hero() {
     return (
         <header id="top" className="hero">
-            <div className="container d-flex  flex-column flex-lg-row">
-                <div class="col-lg-7 col-sm-12 left-content d-flex align-items-center">
+            <div className="container">
+                <div class="content">
                     <div className="">
-                        <h3>My Name is Darrin,</h3>
-                        <h1>I build engaging front-end experiences</h1>
+                        <h3>Hi, my name is <strong>Darrin Duncan</strong>,</h3>
+                        <h1>I build engaging front-end experiences with code.</h1>
                         <div className="d-flex flex-column flex-md-row">
-                            <div className="">
-                                <a href={rez} className="btn btn-primary btn-lg btn-block" target="_blank" rel="noreferrer">Resume</a>
+                            <div className="btn-grp">
+                                <ButtonLink href={rez} text="Resume" blank="_blank"/>
+                                <ButtonLink href="#connect" text="Let's Connect" />
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="col-lg-5 col-sm-12 d-flex justify-content-center align-items-center">
-                    <div className="right-content">
-                        <h2 className="sub">I use code to help solve business challenges</h2>
                     </div>
                 </div>
             </div>

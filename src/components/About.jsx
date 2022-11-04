@@ -1,4 +1,5 @@
 import me from '../assets/about_full.png'
+import Mug from './Mug'
 
 function About() {
     return (
@@ -6,9 +7,10 @@ function About() {
             <section id="about" className="about d-flex">
                 <div className="container">
                     <div className="row d-flex align-items-center justify-content-center">
-                        <div className="about-img">
+                        {/* <div className="about-img">
                             <img src={ me } alt="" />
-                        </div>
+                        </div> */}
+                        <Mug />
 
                         <div className="content">
                             <h2>About Me</h2>
