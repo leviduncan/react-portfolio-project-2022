@@ -124,6 +124,8 @@ html {
       justify-content: center;
       align-items: center;   
       background: url('./assets/Banner01.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
 
       .content {
         display: flex;
@@ -195,7 +197,7 @@ html {
 
         &:after {
           content: '';
-          background-image: url(./assets/about_photo.png);
+          background-image: url('./assets/about_photo.png');
           background-repeat: no-repeat;
           background-size: cover;
           background-position: 31%;
@@ -395,6 +397,11 @@ html {
 
       h2 {
         color: $org;
+      }
+
+      p {
+        width: 50%;
+        margin: 0 auto 40px;
       }
     }
 

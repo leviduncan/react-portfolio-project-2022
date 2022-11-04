@@ -95,6 +95,8 @@ html body .hero {
   justify-content: center;
   align-items: center;
   background: url("./assets/Banner01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 html body .hero .content {
   display: flex;
@@ -160,7 +162,7 @@ html body .about .right-content h2 {
 }
 html body .about .right-content:after {
   content: "";
-  background-image: url(./assets/about_photo.png);
+  background-image: url("./assets/about_photo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 31%;
@@ -337,6 +339,10 @@ html body .connect {
 }
 html body .connect h2 {
   color: #2a77eb;
+}
+html body .connect p {
+  width: 50%;
+  margin: 0 auto 40px;
 }
 html body .btn {
   border-radius: 50px;
