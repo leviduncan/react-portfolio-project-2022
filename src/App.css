@@ -97,6 +97,12 @@ html body .hero {
   background: url("./assets/Banner01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 20%;
+}
+@media (min-width: 768px) {
+  html body .hero {
+    background-position: 20% 20%;
+  }
 }
 html body .hero .content {
   display: flex;

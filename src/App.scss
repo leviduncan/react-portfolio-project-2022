@@ -126,6 +126,11 @@ html {
       background: url('./assets/Banner01.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: 50% 20%;
+
+      @media (min-width:768px) {
+        background-position: 20% 20%;
+      }
 
       .content {
         display: flex;
