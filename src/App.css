@@ -72,7 +72,7 @@ html body .navbar {
 }
 html body .navbar-brand .logo {
   font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding: 5px;
   background: #232323;
   color: #fff;
@@ -84,8 +84,17 @@ html body .navbar-brand .logo {
   align-items: center;
   box-shadow: 0 0 50px rgba(42, 119, 235, 0.2823529412);
 }
+html body .navbar-brand .logo:hover {
+  background: #2059ae;
+}
 html body .navbar-light .navbar-toggler {
   border: unset;
+}
+html body .navbar-light .navbar-nav .nav-link:focus, html body .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  font-weight: 400;
+  background: #2059ae;
+  margin-top: 2px;
 }
 html body .hero {
   height: 100vh;
@@ -108,6 +117,9 @@ html body .hero .content {
   display: flex;
   padding: 0;
   width: 100%;
+}
+html body .hero .content h3 strong {
+  color: #2059ae;
 }
 @media (min-width: 768px) {
   html body .hero .content {
@@ -175,6 +187,7 @@ html body .about .right-content:after {
   opacity: 1;
   width: 100%;
   height: 60vh;
+  border-radius: 10px;
   position: absolute;
 }
 html body .about .sub {
@@ -273,32 +286,32 @@ html body .skills h4 {
   font-size: 1em;
   text-transform: unset;
 }
+html body .skills .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
 html body .skills .skill-card {
   background-color: #fff;
   color: #232323;
-  margin: 0 0.8em 0.8em 0;
-  padding: 1em;
-  border-radius: 10px;
-  border: solid 1px rgb(243, 243, 243);
+  padding: 6px 16px 1px;
+  margin: 4px;
+  border-radius: 50px;
   transition: transform 250ms ease-out;
-  max-width: 300px;
-  width: 100%;
+  min-width: 300px;
+}
+html body .skills .skill-card:hover {
+  box-shadow: 0 0 10px #2059ae;
 }
 @media (max-width: 991px) {
   html body .skills .skill-card {
-    padding: 0.6em;
     max-width: 120px;
     width: unset;
   }
 }
 html body .skills .skill-card p {
   font-size: 0.8em;
-}
-html body .skills .skill-card:hover {
-  box-shadow: 0 0 10px rgba(42, 119, 235, 0.2823529412);
-  border: solid 1px rgb(243, 243, 243);
-  transform-origin: center;
-  transform: translateY(-5px);
 }
 html body .coding-card {
   background-color: #fff;
@@ -343,12 +356,45 @@ html body .connect {
   position: absolute;
   width: 100%;
 }
+html body .connect .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+@media (min-width: 768px) {
+  html body .connect .container {
+    flex-direction: row;
+  }
+}
 html body .connect h2 {
   color: #2a77eb;
 }
-html body .connect p {
-  width: 50%;
-  margin: 0 auto 40px;
+html body .connect .email-border-wrap {
+  background: linear-gradient(324deg, rgb(43, 119, 235) 0%, rgb(218, 233, 255) 100%);
+  border-radius: 10px;
+  padding: 1px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+html body .connect .email {
+  border-radius: 10px;
+  padding: 40px;
+  background: rgb(43, 119, 235);
+  background: linear-gradient(324deg, rgb(43, 119, 235) 0%, rgb(153, 176, 212) 100%);
+}
+html body .connect .email form {
+  display: flex;
+  flex-direction: column;
+}
+html body .connect .email form .form-elements {
+  border-radius: 10px;
+  border: unset;
+  padding: 4px 6px;
+  margin-bottom: 20px;
+}
+html body .connect .email form .g-recaptcha {
+  margin-bottom: 20px;
+  width: 100%;
 }
 html body .btn {
   border-radius: 50px;

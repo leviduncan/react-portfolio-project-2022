@@ -2,7 +2,8 @@ import React from 'react'
 import alldata from '../data'
 import gmas from '../assets/gmas.jpg'
 import armony from '../assets/armony.jpg'
-import fpantry from '../assets/fpantry.jpg'
+import ecom from '../assets/ecom.jpg'
+import upf from '../assets/upf.jpg'
 import { BsGithub } from 'react-icons/bs'
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -13,19 +14,21 @@ function Projects() {
             return gmas
         } else if (data.pic === 'armony') {
             return armony
+        } else if (data.pic === 'upf') {
+            return upf
         } else {
-            return fpantry
+            return ecom
         }
     }
 
     return (
         <section id="projects" className="projects d-flex align-items-center brdr-bottom brdr-bottom">
             <div className="container">
-                <h2>Personal Projects</h2>
+                <h2>Featured Projects</h2>
                 <div className="row row-cols-1 row-cols-lg-3">
                     {alldata.projects.map((data) => (
-                        <>
-                            <div className="col mb-4" key={data.id}>
+                        <div  key={data.id}>
+                            <div className="col mb-4">
                                 <div className="card">
                                     <img src={handleImg(data)} className="p-0 card-img" alt="..." />
                                     <div className="card-body">
@@ -39,7 +42,7 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
-                        </>
+                        </div>
                     )
                     )}
                 </div>

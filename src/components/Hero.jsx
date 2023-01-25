@@ -5,7 +5,7 @@ function Hero() {
     return (
         <header id="top" className="hero">
             <div className="container">
-                <div class="content">
+                <div className="content">
                     <div className="">
                         <h3>Hi, my name is <strong>Darrin Duncan</strong>,</h3>
                         <h1>I build engaging front-end experiences with code.</h1>

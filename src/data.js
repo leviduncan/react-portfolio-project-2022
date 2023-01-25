@@ -18,11 +18,19 @@ const alldata = {
         },
         {
             id: 3,
-            title: 'Food Pantry eCommerce App',
-            text: 'View and purchase good tasting food plans for a great price',
-            pic: 'pantry',
-            git_link: 'https://github.com/leviduncan/Food-Pantry-App',
-            app_link: 'https://food-pantry.netlify.app/'
+            title: 'Electronics Online Store',
+            text: 'View and purchase amazing electronics - Context state',
+            pic: 'ecom',
+            git_link: 'https://github.com/leviduncan/context-store-app',
+            app_link: 'https://demostore.darrinduncan.com/'
+        },
+        {
+            id: 4,
+            title: 'HR Management Tool',
+            text: 'Manage people assets - Fullstack MERN Project',
+            pic: 'upf',
+            git_link: 'https://github.com/leviduncan/user-profile-frontend',
+            app_link: 'https://user-profile-frontend.netlify.app/'
         },
 ],
     skills: [
