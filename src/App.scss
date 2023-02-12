@@ -406,6 +406,10 @@ html {
           border-bottom-left-radius: 0;
         }
       }
+      .other-links {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     // Connect

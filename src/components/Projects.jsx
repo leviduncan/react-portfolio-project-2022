@@ -1,9 +1,9 @@
 import React from 'react'
 import alldata from '../data'
 import gmas from '../assets/gmas.jpg'
-import armony from '../assets/armony.jpg'
 import ecom from '../assets/ecom.jpg'
 import upf from '../assets/upf.jpg'
+import calc_sm from '../assets/calc_sm.png'
 import { BsGithub } from 'react-icons/bs'
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -12,12 +12,12 @@ function Projects() {
     const handleImg = (data) => {
         if (data.pic === 'gmas') {
             return gmas
-        } else if (data.pic === 'armony') {
-            return armony
         } else if (data.pic === 'upf') {
             return upf
-        } else {
+        } else if (data.pic === 'ecom') {
             return ecom
+        } else {
+            return calc_sm
         }
     }
 
@@ -46,7 +46,24 @@ function Projects() {
                     )
                     )}
                 </div>
-
+                <h4>Other Projects</h4>
+                <hr />
+                {
+                    alldata.other.map((other) => (
+                        <div key={other.id}>
+                            <div className="col-3 mb-4">
+                                <div className="card">
+                                    <img src={handleImg(other)} className="p-0 card-img" alt="..." />
+                                    <div className="text-center">{other.title}</div>
+                                </div>
+                                <div className="other-links">
+                                <div><a href="https://dd-calculator-app.netlify.app" target="_blank" rel="noreferrer">Demo</a></div>
+                                <div><a href="https://github.com/leviduncan/calculator" target="_blank" rel="noreferrer">Code</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </section>
     )

@@ -348,6 +348,10 @@ html body .projects .card .card-img {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+html body .projects .other-links {
+  display: flex;
+  justify-content: space-between;
+}
 html body .connect {
   padding: 5rem 1.5em;
   background: #232323;

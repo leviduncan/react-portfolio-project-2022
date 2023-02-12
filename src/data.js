@@ -10,14 +10,6 @@ const alldata = {
         },
         {
             id: 2,
-            title: 'Armonia Social Media App',
-            text: 'Connect with friends or find new ones in this community of singles',
-            pic: 'armony',
-            git_link: 'https://github.com/leviduncan/Armonia-Social-Media-App',
-            app_link: 'https://armonia-social-media-app.netlify.app/'
-        },
-        {
-            id: 3,
             title: 'Electronics Online Store',
             text: 'View and purchase amazing electronics - Context state',
             pic: 'ecom',
@@ -25,13 +17,23 @@ const alldata = {
             app_link: 'https://demostore.darrinduncan.com/'
         },
         {
-            id: 4,
+            id: 3,
             title: 'HR Management Tool',
             text: 'Manage people assets - Fullstack MERN Project',
             pic: 'upf',
             git_link: 'https://github.com/leviduncan/user-profile-frontend',
             app_link: 'https://user-profile-frontend.netlify.app/'
         },
+],
+    other: [
+        {
+            id: 1,
+            title: 'Calculator',
+            text: '',
+            pic: 'calc_sm',
+            git_link: 'https://github.com/leviduncan/calculator',
+            app_link: 'https://dd-calculator-app.netlify.app'
+        }
 ],
     skills: [
         {
